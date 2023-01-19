@@ -1,0 +1,10 @@
+version: "3.10"
+services:
+
+  main:
+    build: ./main
+    restart: always
+    env_file:
+      - main.env
+    ports:
+      - 8000:8000
